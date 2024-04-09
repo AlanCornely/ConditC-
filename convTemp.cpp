@@ -9,17 +9,17 @@ int main () {
 
     char temp2;
 
-    printf(" Escolha a converção: \n f ou c \n");
+    printf(" Escolha a converção: \n f ou c \n\n");
     scanf("%s", &temp2);
 
-    float f = (temp * 1.8) + 32;
-    float c = (temp - 32) / 1.8;
+    float f = ((temp * 1.8) + 32);
+    float c = ((temp - 32) / 1.8);
     
     if( temp2 == 'f'){
-        printf("%f \n", f);
+        printf("%.2f \n", f);
     }
     else if( temp2 == 'c'){
-        printf("%f \n", c);
+        printf("%.2f \n", c);
     }
 
 return 0;
